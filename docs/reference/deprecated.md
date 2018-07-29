@@ -7,6 +7,8 @@ Gutenberg's deprecation policy is intended to support backwards-compatibility fo
 - `wp.editor.getColorName` has been removed. Please use `wp.editor.getColorObjectByColorValue` instead.
 - `wp.editor.getColorClass` has been renamed. Please use `wp.editor.getColorClassName` instead.
 - `value` property in color objects passed by `wp.editor.withColors` has been removed. Please use color property instead.
+- `wp.blocks.setUnknownTypeHandlerName` has been removed. Please use `setUnstructuredTypeHandlerName` and `setUnregisteredTypeHandlerName` instead.
+- `wp.blocks.getUnknownTypeHandlerName` has been removed. Please use `getUnstructuredTypeHandlerName` and `getUnregisteredTypeHandlerName` instead.
 
 ## 3.8.0
 
