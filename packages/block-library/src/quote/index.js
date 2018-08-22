@@ -202,7 +202,7 @@ export const settings = {
 						/* translators: the text of the quotation */
 						placeholder={ __( 'Write quote…' ) }
 					/>
-					{ ( ( citation && citation.length > 0 ) || isSelected ) && (
+					{ ( ! RichText.isEmpty( citation ) || isSelected ) && (
 						<RichText
 							tagName="cite"
 							value={ citation }
@@ -226,7 +226,7 @@ export const settings = {
 		return (
 			<blockquote style={ { textAlign: align ? align : null } }>
 				<RichText.Content value={ toRichTextValue( value ) } />
-				{ citation && citation.length > 0 && <RichText.Content tagName="cite" value={ citation } /> }
+				{ ! RichText.isEmpty( citation ) && <RichText.Content tagName="cite" value={ citation } /> }
 			</blockquote>
 		);
 	},
@@ -261,7 +261,7 @@ export const settings = {
 						style={ { textAlign: align ? align : null } }
 					>
 						<RichText.Content value={ toRichTextValue( value ) } />
-						{ citation && citation.length > 0 && <RichText.Content tagName="cite" value={ citation } /> }
+						{ ! RichText.isEmpty( citation ) && <RichText.Content tagName="cite" value={ citation } /> }
 					</blockquote>
 				);
 			},
@@ -289,7 +289,7 @@ export const settings = {
 						style={ { textAlign: align ? align : null } }
 					>
 						<RichText.Content value={ toRichTextValue( value ) } />
-						{ citation && citation.length > 0 && <RichText.Content tagName="footer" value={ citation } /> }
+						{ ! RichText.isEmpty( citation ) && <RichText.Content tagName="footer" value={ citation } /> }
 					</blockquote>
 				);
 			},
