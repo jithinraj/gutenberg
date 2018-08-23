@@ -113,7 +113,6 @@ const gutenbergPackages = [
 ];
 
 const externals = {
-	fs: 'commonjs fs',
 	react: 'React',
 	'react-dom': 'ReactDOM',
 	tinymce: 'tinymce',
