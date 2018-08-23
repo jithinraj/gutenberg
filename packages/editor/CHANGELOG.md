@@ -12,3 +12,4 @@
 - Breaking: `isFetchingSharedBlock` selector has been removed. Use `isFetchingReusableBlock` instead.
 - Breaking: `getSharedBlocks` selector has been removed. Use `getReusableBlocks` instead.
 - Breaking: `editorMediaUpload` has been removed. Use `mediaUpload` instead.
+- Feature: Add editor styles support.
