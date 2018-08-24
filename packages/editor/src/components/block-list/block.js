@@ -489,7 +489,6 @@ export class BlockListBlock extends Component {
 						layout={ layout }
 						onDragStart={ this.onDragStart }
 						onDragEnd={ this.onDragEnd }
-						isDragging={ dragging }
 						elementId={ blockElementId }
 					/>
 				) }
